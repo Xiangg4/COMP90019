@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "285527641583",
+    "firebase_url": "https://parking-anywhere-510d8.firebaseio.com",
+    "project_id": "parking-anywhere-510d8",
+    "storage_bucket": "parking-anywhere-510d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:285527641583:android:2b22ed4bf981a7d401ba1a",
+        "android_client_info": {
+          "package_name": "com.example.parking_anywhere"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "285527641583-7qem35iqmbv7b0re6ldp61k26un7muv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRmtlacpdsLDNoJb8hX3slO7nccTqCeD8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "285527641583-7qem35iqmbv7b0re6ldp61k26un7muv6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
