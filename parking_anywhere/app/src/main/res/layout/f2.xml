@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DescriptionFragment">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/homeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:tint="@color/colorAccent"
+        app:backgroundTint="@android:color/white"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/ic_close_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="296dp"
+        android:background="#00000000"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/des_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#82B1FF"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="369dp"
+                    android:layout_height="match_parent"
+                    android:text="Parking Bay Description" />
+            </LinearLayout>
+
+            <!--        available-->
+            <LinearLayout
+                android:id="@+id/des_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/des_ava"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <!--        price-->
+            <LinearLayout
+                android:id="@+id/des_layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="91dp"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@mipmap/money_80"
+                    android:text="Price: " />
+
+                <TextView
+                    android:id="@+id/des_price"
+                    android:layout_width="303dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <!--        time1-->
+            <LinearLayout
+                android:id="@+id/des_layout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="91dp"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@mipmap/time_80"
+                    android:text="Time: " />
+
+                <TextView
+                    android:id="@+id/des_time1"
+                    android:layout_width="304dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <!--        time2-->
+            <LinearLayout
+                android:id="@+id/des_layout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="91dp"
+                    android:layout_height="match_parent"
+                    android:text="Time: "
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/des_time2"
+                    android:layout_width="304dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <!--        time3-->
+            <LinearLayout
+                android:id="@+id/des_layout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="91dp"
+                    android:layout_height="match_parent"
+                    android:text="Time: "
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/des_time3"
+                    android:layout_width="304dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <!--        time4-->
+            <LinearLayout
+                android:id="@+id/des_layout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="91dp"
+                    android:layout_height="match_parent"
+                    android:text="Time: "
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/des_time4"
+                    android:layout_width="305dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <!--        time5-->
+            <LinearLayout
+                android:id="@+id/des_layout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="91dp"
+                    android:layout_height="match_parent"
+                    android:text="Time: "
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/des_time5"
+                    android:layout_width="304dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <!--        time6-->
+            <LinearLayout
+                android:id="@+id/des_layout10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="91dp"
+                    android:layout_height="match_parent"
+                    android:text="Time: "
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/des_time6"
+                    android:layout_width="305dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mark" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</FrameLayout>

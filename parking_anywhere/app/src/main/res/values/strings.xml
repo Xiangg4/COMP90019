@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Parking Anywhere</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_recommendation">RecommendationActivity</string>
+
+    <!--Intro Slider Strings-->
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="slide_1_title">Find nearby parking spots</string>
+    <string name="slide_1_desc">An app where you will get real-time information of On-Street parking spots in Melbourne. You can search and filter the parking spots for your needs</string>
+    <string name="slide_2_title">Enjoy smart services</string>
+    <string name="slide_2_desc">Click this button to get recommended parking spot based on our predictive technology </string>
+    <string name="slide_3_title">Know your personalized analytics</string>
+    <string name="slide_3_desc">Learn about your monthly spend, parking histories and favorite streets in your own profile</string>
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+</resources>

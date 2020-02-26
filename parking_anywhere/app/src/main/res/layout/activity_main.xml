@@ -1,0 +1,248 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:background="#F9F9F9"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/profileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/user_setting" />
+
+
+
+<!--        <Button-->
+<!--            android:id="@+id/signin_button"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Sign In" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/login_button"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Login" />-->
+<!--        <AutoCompleteTextView-->
+<!--            android:id="@+id/searchView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:completionThreshold="0"-->
+<!--            android:hint="Search"-->
+<!--            app:backgroundTint="@android:color/black"/>-->
+        <fragment
+            android:id="@+id/autocomplete_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+            />
+
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="0.1">-->
+<!--        <AutoCompleteTextView-->
+<!--            android:id="@+id/searchView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:completionThreshold="0"-->
+<!--            android:hint="Search"-->
+<!--            app:backgroundTint="@android:color/black"/>-->
+
+<!--    </LinearLayout>-->
+
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="100">
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:id="@+id/main_card_view"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="296dp"-->
+<!--                android:background="#00000000"-->
+<!--                app:cardCornerRadius="4dp"-->
+<!--                app:cardElevation="5dp"-->
+<!--                app:cardMaxElevation="10dp"-->
+<!--                app:cardPreventCornerOverlap="true"-->
+<!--                app:cardUseCompatPadding="true"-->
+<!--                android:layout_gravity="bottom">-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/description_view"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="0">-->
+<!--                    <FrameLayout-->
+<!--                        android:id="@+id/description_container"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        tools:layout_editor_absoluteX="0dp">-->
+<!--                    </FrameLayout>-->
+<!--                </LinearLayout>-->
+
+<!--            </com.google.android.material.card.MaterialCardView>-->
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/recommend_button"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="110dp"
+            android:background="@mipmap/recommendation" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/main_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            android:layout_gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/description_view"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0">
+                <FrameLayout
+                    android:id="@+id/description_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteX="0dp"
+                    android:background="#FFFFFF">
+                </FrameLayout>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/description_view"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="0">-->
+<!--        <FrameLayout-->
+<!--            android:id="@+id/description_container"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            tools:layout_editor_absoluteX="0dp">-->
+<!--        </FrameLayout>-->
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="@drawable/gradientbackground"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Parking Time"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/quantum_white_text"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="@drawable/gradientbackground">
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/button_1_4P"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1/4P"
+                android:textColor="@color/quantum_white_text" />
+
+            <RadioButton
+                android:id="@+id/button_1_2P"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1/2P"
+                android:textColor="@color/quantum_white_text"/>
+
+            <RadioButton
+                android:id="@+id/button_1P"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1P"
+                android:textColor="@color/quantum_white_text"/>
+
+            <RadioButton
+                android:id="@+id/button_2P"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2P"
+                android:textColor="@color/quantum_white_text"/>
+
+            <RadioButton
+                android:id="@+id/button_4P"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4P"
+                android:textColor="@color/quantum_white_text"/>
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+</LinearLayout>
